@@ -1,24 +1,53 @@
-# README
+### THE GOSSIP PROJECT
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Introduction
 
-Things you may want to cover:
+Welcome to The Gossip Project, a web application allowing users to consult gossips online.
 
-* Ruby version
+Technologies Used:
 
-* System dependencies
+Ruby version: 3.2.2  
+Rails version: 7.3.1.2  
+PostgreSQL 16.2
 
-* Configuration
+Features:
 
-* Database creation
+Browsing the list of gossips,  
+Individual consultation of gossips to view associated details and comments,  
+User details
 
-* Database initialization
+Gems:
 
-* How to run the test suite
+Usage of the Faker gem:  
+The Faker gem will be used to generate fake data to populate the database.  
+Usage of the table_print gem:  
+The table_print gem will be used to display data in a tabular format in the Rails console.
 
-* Services (job queues, cache servers, search engines, etc.)
+This README provides guidance on setting up and running the application:
 
-* Deployment instructions
+Ruby version:  
+Ensure you have Ruby version 3.2.2 installed.
 
-* ...
+Database creation:  
+Run rails db:create to create the application database.
+
+Database initialization:  
+Run rails db:migrate to initialize the database schema.
+
+Configuration:
+
+The main configuration file is located in config/application.rb. You can customize the application settings according to your needs.
+
+Contributing:
+
+Contributions are welcome! Feel free to open an issue or submit a pull request to suggest improvements.
+
+Authors:
+
+Sabrina AEH
+
+License:
+
+This project is licensed under the MIT License. See the LICENSE file for more details
+
+Thanks!
