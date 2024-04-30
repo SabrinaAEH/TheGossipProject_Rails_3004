@@ -1,6 +1,6 @@
 require "faker"
 
-User.destroy_all
+User.where.not(id: 112).destroy_all
 Gossip.destroy_all
 
 #créer 10 villes aléatoires
@@ -18,12 +18,13 @@ users = []
     user.city = cities.sample
 end
 
-#créer 10 gossips aléatoires
 gossips = []
 20.times do
-    gossip = Gossip.create!(title: Faker::Hacker.say_something_smart, description: Faker::Lorem.paragraph(sentence_count:5), user: users.sample)
-    gossips << gossip
+  title = Faker::Lorem.characters(number: rand(3..14))
+  gossip = Gossip.create!(title: title, description: Faker::Lorem.paragraph(sentence_count: 5), user: users.sample)
+  gossips << gossip
 end
+
 
 #vérifier l'insertion et l'attribution users/gossips
 users[0].gossips #changer l'index si pas de gossips
