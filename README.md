@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Welcome to The Gossip Project, a web application allowing users to consult gossips online.
+Welcome to The Gossip Project, a web application allowing users to consult and to register gossips online.
 
 Technologies Used:
 
